@@ -9,7 +9,12 @@ import com.example.entry.Admin;
 public class AdminService {
 	@Resource
 	private AdminDao adminDao;
-	
+
+	/**
+	 * 检查登录
+	 * @param id
+	 * @return
+	 */
 	public Admin checkLogin(String id) {
 		Admin admin = adminDao.loginCheck(id);
 		return admin;

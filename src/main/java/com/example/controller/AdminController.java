@@ -22,7 +22,6 @@ public class AdminController {
 	
 	@Resource
 	private AdminService adminService;
-
 	
 	@RequestMapping(value = "judge", method = RequestMethod.POST)
 	@ResponseBody
